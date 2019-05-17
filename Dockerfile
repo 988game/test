@@ -9,4 +9,4 @@ RUN cd /data/nginx && mkdir conf
 RUN sed -i 's/session    required   pam_loginuid.so/#session    required   pam_loginuid.so/g' /etc/pam.d/crond && service crond start
 
 
-CMD [ "ping 127.0.0.1" ]
+CMD ["/bin/bash"]
